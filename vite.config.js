@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import svgSprites from 'rollup-plugin-svg-sprites'
+import svgSprites from "rollup-plugin-svg-sprites";
+import AutoImport from "unplugin-auto-import/vite";
 
 // 配置别名需要的路径模块
 import { resolve } from "path";
@@ -12,6 +13,10 @@ export default defineConfig({
     svgSprites({
       vueComponent: true,
       exclude: ["node_modules/**"],
+    }),
+    AutoImport({
+      imports: ["vue", "vue-router", "pinia"],
+      dts: false,
     }),
   ],
   server: {

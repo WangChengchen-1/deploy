@@ -17,6 +17,7 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "rollup-plugin-svg-sprites": "^1.2.5",
     "sass": "^1.60.0",
+    "unplugin-auto-import": "^0.15.2",
     "vite": "^4.2.0"
   }
 }

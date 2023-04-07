@@ -3,13 +3,13 @@
  -->
 <template>
   <div class="home-page">
-    这里是首页
+    <Sidebar />
   </div>
 </template>
 
 <script  setup>
 import { ref } from "vue";
-
+import Sidebar from "./components/Sidebar/index.vue";
 </script>
 
 <style lang="scss" scoped>
