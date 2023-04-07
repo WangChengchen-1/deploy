@@ -69,7 +69,7 @@ function handleLogin() {
     return;
   } else {
     showElMessage("恭喜你，大聪明");
-    const timer = setTimeout(() => {
+    let timer = setTimeout(() => {
       router.push("/");
       //清理 回收
       clearTimeout(timer);
