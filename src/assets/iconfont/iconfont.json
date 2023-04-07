@@ -1,0 +1,16 @@
+{
+  "id": "4000940",
+  "name": "personal",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "用于日常自己项目的使用",
+  "glyphs": [
+    {
+      "icon_id": "33987165",
+      "name": "专属顾问",
+      "font_class": "zhuanshuguwen",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    }
+  ]
+}

@@ -1,16 +1,23 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import svgSprites from 'rollup-plugin-svg-sprites'
 
 // 配置别名需要的路径模块
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    svgSprites({
+      vueComponent: true,
+      exclude: ["node_modules/**"],
+    }),
+  ],
   server: {
     host: "0.0.0.0",
   },
-  base:'./',//静态资源获取
+  base: "./", //静态资源获取
   // 配置别名
   resolve: {
     alias: [
