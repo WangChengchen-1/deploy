@@ -39,18 +39,20 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 import { ElMessage } from "element-plus";
-import { useRouter } from "vue-router";
+import useUserStore from "@/stores/modules/user";
 import StudyIcon from "@/assets/images/svg/study.svg";
 
 const router = useRouter();
+const userStore = useUserStore();
 const loading = ref(false);
 const loginForm = ref({
   username: "",
   password: "",
   rememberMe: false,
 });
+
+userStore.login(loginForm.value);
 
 function handleLogin() {
   const { password, username, rememberMe } = loginForm.value;
@@ -68,10 +70,13 @@ function handleLogin() {
     showElMessage("你猜猜password是不是:123456", "warning");
     return;
   } else {
+    loading.value = true;
     showElMessage("恭喜你，大聪明");
+    userStore.login(loginForm.value);
     let timer = setTimeout(() => {
       router.push("/");
       //清理 回收
+      loading.value = false;
       clearTimeout(timer);
       timer = null;
     }, 1000);
@@ -129,7 +134,7 @@ function showElMessage(message = "提示信息", type = "success") {
           color: #d5dce6;
           &:-webkit-autofill {
             transition: background-color 5000s ease-in-out 0s;
-          }//解决自动填充密码的背景色
+          } //解决自动填充密码的背景色
           -webkit-text-fill-color: #d5dce6; //颜色是设置成你需要的颜色
         }
       }

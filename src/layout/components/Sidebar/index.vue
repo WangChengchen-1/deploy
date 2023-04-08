@@ -6,7 +6,9 @@
 */
 <template>
   <div class="sidebar">
-    <div class="logo">CC HOME</div>
+    <div class="logo">
+      <i class="iconfont icon-zhuanshuguwen"></i>
+      CC HOME</div>
     <el-scrollbar wrap-class="scrollbar-wrapper">
       <el-menu
         class="el-menu-vertical-demo"

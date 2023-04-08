@@ -15,7 +15,7 @@ export default defineConfig({
       exclude: ["node_modules/**"],
     }),
     AutoImport({
-      imports: ["vue", "vue-router", "pinia"],
+      imports: ["vue", "vue-router", "pinia"],//自动引入相关钩子函数
       dts: false,
     }),
   ],
