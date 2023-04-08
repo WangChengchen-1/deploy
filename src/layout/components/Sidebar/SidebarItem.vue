@@ -8,14 +8,18 @@
   <div class="sidebar-item">
     <!-- 无菜单 -->
     <router-link v-if="!item.children" :to="item.path">
-      <el-menu-item :index="item.path" v-if="item.meta">
-        <span>{{ item.meta.title }}</span>
+      <el-menu-item v-if="!item.children" :index="item.path">
+        <span>{{ item.meta && item.meta.title }}</span>
       </el-menu-item>
     </router-link>
-    <!-- <el-menu-item index="2">
-      <el-icon><icon-menu /></el-icon>
-      <span>Navigator Two</span>
-    </el-menu-item> -->
+    <!-- 有子菜单 -->
+    <el-sub-menu :index="item.path" v-else>
+      <SidebarItem
+        v-for="(route, index) in item.children"
+        :key="route.path"
+        :item="route"
+      />
+    </el-sub-menu>
   </div>
 </template>
 

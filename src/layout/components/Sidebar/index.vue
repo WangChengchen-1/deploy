@@ -17,7 +17,7 @@
         mode="vertical"
       >
         <SideberItem
-          v-for="(route, index) in routes"
+          v-for="(route, index) in asyncRoutes"
           :key="route.path + index"
           :item="route"
         />
@@ -28,7 +28,7 @@
 
 <script setup >
 import SideberItem from "./SidebarItem.vue";
-import routes from "@/router/routes";
+import { asyncRoutes } from "@/router/routes";
 
 const route = useRoute();
 

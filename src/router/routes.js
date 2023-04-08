@@ -1,3 +1,12 @@
+import Layout from "@/layout/index.vue";
+export const asyncRoutes = [
+  {
+    path: "/index",
+    meta: { title: "首页" },
+    name: "Index",
+    component: () => import("@/views/index.vue"),
+  },
+];
 // 公共路由
 const routes = [
   {
@@ -7,15 +16,9 @@ const routes = [
   },
   {
     path: "/",
-    name: "index",
-    component: () => import("@/layout/index.vue"),
-    meta: { title: "首页" }, //原标记
-  },
-  {
-    path: "/system",
-    name: "system",
-    component: () => import("@/views/system/index.vue"),
-    meta: { title: "系统管理" }, //原标记
+    redirect: "/index",
+    component: Layout,
+    children: asyncRoutes,
   },
 ];
 

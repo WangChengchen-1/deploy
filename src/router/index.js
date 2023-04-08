@@ -12,7 +12,9 @@ const router = createRouter({
 
 // GOOD
 router.beforeEach((to, from, next) => {
-  const authentication = sessionStorage.getItem('isAuthenticated')??localStorage.getItem("isAuthenticated")
+  const authentication =
+    sessionStorage.getItem("isAuthenticated") ??
+    localStorage.getItem("isAuthenticated");
   if (to.name !== "Login" && !authentication) {
     next({ name: "Login" });
   } else {
