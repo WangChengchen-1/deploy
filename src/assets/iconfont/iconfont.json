@@ -6,11 +6,39 @@
   "description": "用于日常自己项目的使用",
   "glyphs": [
     {
-      "icon_id": "33987165",
-      "name": "专属顾问",
-      "font_class": "zhuanshuguwen",
-      "unicode": "e621",
-      "unicode_decimal": 58913
+      "icon_id": "3716357",
+      "name": "letter-c",
+      "font_class": "letter-c",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "15838429",
+      "name": "arrow-down",
+      "font_class": "arrow-down",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "4936958",
+      "name": "HTML5",
+      "font_class": "HTML",
+      "unicode": "e87d",
+      "unicode_decimal": 59517
+    },
+    {
+      "icon_id": "13208306",
+      "name": "webpage",
+      "font_class": "yemian",
+      "unicode": "e842",
+      "unicode_decimal": 59458
+    },
+    {
+      "icon_id": "33986999",
+      "name": "首页-置灰",
+      "font_class": "shouye-zhihui",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
     }
   ]
 }

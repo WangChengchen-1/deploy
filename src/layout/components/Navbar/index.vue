@@ -11,16 +11,13 @@
       <div class="avatar-container">
         <el-dropdown trigger="click" @command="handleCommand">
           <span class="el-dropdown-link">
-            <el-avatar> {{ userStore.avatar }} </el-avatar>
-
-            <i class="iconfont icon-zhuanshuguwen"></i>
+            <el-avatar  shape="square" :size="50"> {{ userStore.avatar }} </el-avatar>
+            <i class="iconfont icon-arrow-down"></i>
           </span>
           <template #dropdown>
             <el-dropdown-menu>
               <el-dropdown-item>个人中心</el-dropdown-item>
-              <el-dropdown-item command="logout" divided
-                >退出登录</el-dropdown-item
-              >
+              <el-dropdown-item command="logout" divided>退出登录</el-dropdown-item>
             </el-dropdown-menu>
           </template>
         </el-dropdown>
@@ -55,7 +52,7 @@ function logout() {
         router.push("/login");
       });
     })
-    .catch(() => {});
+    .catch(() => { });
 }
 </script>
 
@@ -65,8 +62,13 @@ function logout() {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+
   .el-dropdown-link {
     cursor: pointer;
+    .icon-arrow-down{
+      position: relative;
+      top: 20px;
+    }
   }
 }
 </style>

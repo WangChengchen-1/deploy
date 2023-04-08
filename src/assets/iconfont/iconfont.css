@@ -1,10 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4000940 */
-  /* Color fonts */
-  src: 
-       url('iconfont.woff2?t=1680833413025') format('woff2'),
-       url('iconfont.woff?t=1680833413025') format('woff'),
-       url('iconfont.ttf?t=1680833413025') format('truetype');
+  src: url('iconfont.woff2?t=1680968121742') format('woff2'),
+       url('iconfont.woff?t=1680968121742') format('woff'),
+       url('iconfont.ttf?t=1680968121742') format('truetype');
 }
 
 .iconfont {
@@ -15,7 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-zhuanshuguwen:before {
-  content: "\e621";
+.icon-letter-c:before {
+  content: "\e660";
+}
+
+.icon-arrow-down:before {
+  content: "\e665";
+}
+
+.icon-HTML:before {
+  content: "\e87d";
+}
+
+.icon-yemian:before {
+  content: "\e842";
+}
+
+.icon-shouye-zhihui:before {
+  content: "\e61d";
 }
 

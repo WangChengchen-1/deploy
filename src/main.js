@@ -8,7 +8,11 @@ import "@/assets/iconfont/iconfont.css";
 import "@/assets/iconfont/iconfont.js";
 import "@/assets/css/reset.css";
 
+// svg图标
+import elementIcons from "@/components/SvgIcon/elementIcons";
+
 const app = createApp(App);
+app.use(elementIcons);
 app.use(router);
 app.use(store);
 app.use(ElementPlus);
