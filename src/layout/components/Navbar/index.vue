@@ -8,9 +8,9 @@
   <div class="navbar">
     <div class="left">
       <el-breadcrumb separator="/">
-        <el-breadcrumb-item v-for="(item, index) in breadcrumbList" :key="index">
+        <el-breadcrumb-item v-for="(item, index) in breadcrumbList" :key="item.path">
           <span v-if="item.redirect === 'noRedirect'">{{ item.meta.title }}</span>
-          <a :href="item.path" v-else>{{ item.meta.title }}</a></el-breadcrumb-item>
+          <a @click.prevent="handleClick(item)" v-else>{{ item.meta.title }}</a></el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="right-menu">
@@ -67,14 +67,24 @@ function logout() {
 
 function getBreadcrumbList() {
   let matched = route.matched;
-  breadcrumbList.value = route.matched.filter(item => item.meta && item.meta.title);
+  breadcrumbList.value = matched.filter(item => item.meta && item.meta.title);
   if (matched[1].meta.title !== '首页') {
-    breadcrumbList.value.unshift({ path: '/', meta: { title: '首页' } })
+    breadcrumbList.value.unshift({ path: '/', meta: { title: '首页' } });
   }
 }
-watchEffect(()=>{
+
+function handleClick(item) {
+  const { redirect, path } = item;
+  if (redirect) {
+    router.push(redirect)
+    return;
+  }
+  router.push(path);
+}
+watchEffect(() => {
   getBreadcrumbList();
 })
+getBreadcrumbList();
 </script>
 
 <style scoped lang="scss">
