@@ -56,9 +56,11 @@ function resolvePath(basePath, path) {
   }
 
   .el-menu-item.is-active {
+    color: #409eff;
+
     :deep(.iconfont) {
       &::before {
-        color: #ffd04b;
+        color: #409eff;
         font-weight: bold;
       }
     }
