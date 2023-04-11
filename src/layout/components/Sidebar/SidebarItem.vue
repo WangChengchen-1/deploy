@@ -51,7 +51,6 @@ function resolvePath(basePath, path) {
 
     &::before {
       color: #bfcbd9;
-      font-weight: bold;
     }
   }
 
@@ -61,7 +60,6 @@ function resolvePath(basePath, path) {
     :deep(.iconfont) {
       &::before {
         color: #409eff;
-        font-weight: bold;
       }
     }
   }

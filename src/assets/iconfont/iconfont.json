@@ -6,6 +6,20 @@
   "description": "用于日常自己项目的使用",
   "glyphs": [
     {
+      "icon_id": "2205478",
+      "name": "取消全屏",
+      "font_class": "cancel-full-screen",
+      "unicode": "e758",
+      "unicode_decimal": 59224
+    },
+    {
+      "icon_id": "5209605",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
       "icon_id": "3716357",
       "name": "letter-c",
       "font_class": "letter-c",

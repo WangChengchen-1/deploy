@@ -54,7 +54,9 @@ const activeMenu = computed(() => {
 
   :deep(.scrollbar-wrapper) {
     height: calc(100vh - 50px);
-
+    .el-menu-vertical-demo{
+      border-right: none;
+    }
     .el-sub-menu__title:hover {
       background-color: rgb(67, 74, 80) !important;
     }

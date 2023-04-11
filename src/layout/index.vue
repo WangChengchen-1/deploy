@@ -2,14 +2,14 @@
     name：首页
  -->
 <template>
-  <div class="home-page">
+  <div class="main-content">
     <Sidebar class="left" />
     <!-- 二级路由出口 -->
     <div class="right">
       <Navbar />
-      <div class="main-content">
+      <el-scrollbar height="calc(100vh - 84px)">
         <router-view></router-view>
-      </div>
+      </el-scrollbar>
     </div>
   </div>
 </template>
@@ -21,13 +21,10 @@ import Navbar from "./components/Navbar/index.vue";
 </script>
 
 <style lang="scss" scoped>
-.home-page {
+.main-content {
   display: flex;
   .right {
     flex: auto;
-    .main-content {
-      height: calc(100vh - 84px);
-    }
   }
 }
 </style>

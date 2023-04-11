@@ -7,6 +7,7 @@ import "element-plus/dist/index.css";
 import "@/assets/iconfont/iconfont.css";
 import "@/assets/iconfont/iconfont.js";
 import "@/assets/css/reset.css";
+import "@/assets/css/index.scss";
 
 // svg图标
 import elementIcons from "@/components/SvgIcon/elementIcons";
