@@ -22,14 +22,14 @@
       </el-breadcrumb>
     </div>
     <div class="right-menu">
-      <Screenfull style="margin-right:10px"/>
+      <Screenfull style="margin-right: 10px;padding-top:10px" />
       <div class="avatar-container">
         <el-dropdown trigger="click" @command="handleCommand">
           <span class="el-dropdown-link">
             <el-avatar shape="square" :size="40">
               {{ userStore.avatar }}
             </el-avatar>
-            <i class="iconfont icon-arrow-down"></i>
+            <el-icon :size="20"><CaretBottom /></el-icon>
           </span>
           <template #dropdown>
             <el-dropdown-menu>
@@ -110,12 +110,10 @@ getBreadcrumbList();
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.04);
   .right-menu {
     display: flex;
-    align-items: center;
     .el-dropdown-link {
       cursor: pointer;
 
-      .icon-arrow-down {
-        position: relative;
+      .el-icon {
         top: 18px;
       }
     }
