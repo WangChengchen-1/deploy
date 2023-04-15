@@ -156,7 +156,7 @@ getBreadcrumbList();
         cursor: pointer;
 
         .el-icon {
-          top: 18px;
+          top: 8px;
         }
       }
     }

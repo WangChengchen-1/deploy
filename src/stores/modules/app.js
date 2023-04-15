@@ -4,7 +4,6 @@ export const useAppStore = defineStore("app", {
   }),
   actions: {
     toggleSideBarHide(status) {
-      console.log(status);
       this.isCollapse = status;
     },
   },

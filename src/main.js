@@ -8,6 +8,7 @@ import "@/assets/iconfont/iconfont.css";
 import "@/assets/iconfont/iconfont.js";
 import "@/assets/css/reset.css";
 import "@/assets/css/index.scss";
+import "@/utils/resize.js"
 
 // svg图标
 import elementIcons from "@/components/SvgIcon/elementIcons";
