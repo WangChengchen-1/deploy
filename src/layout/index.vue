@@ -15,16 +15,16 @@
 </template>
 
 <script  setup>
-import { ref } from "vue";
 import Sidebar from "./components/Sidebar/index.vue";
 import Navbar from "./components/Navbar/index.vue";
+
 </script>
 
 <style lang="scss" scoped>
 .main-content {
   display: flex;
   .right {
-    flex: auto;
+    width: 100%;
   }
 }
 </style>

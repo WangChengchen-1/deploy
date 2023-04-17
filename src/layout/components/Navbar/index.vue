@@ -44,7 +44,9 @@
         </div>
       </div>
     </div>
-    <div class="navbar-bottom"></div>
+    <div class="navbar-bottom">
+      <TagView />
+    </div>
   </div>
 </template>
 
@@ -53,6 +55,7 @@ import { useAppStore } from "@/stores/modules/app";
 import { ElMessageBox } from "element-plus";
 import useUserStore from "@/stores/modules/user";
 import Screenfull from "@/components/Screenfull/index.vue";
+import TagView from "../TagsView/index.vue"
 
 const userStore = useUserStore();
 const appStore = useAppStore();

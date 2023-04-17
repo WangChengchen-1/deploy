@@ -56,6 +56,7 @@ const activeMenu = computed(() => {
     align-items: center;
     cursor: pointer;
     padding-left: 15px;
+    padding-right: 5px;
 
     // 设置字体的隐藏/出现的渐变效果
     div {

@@ -29,7 +29,11 @@ export function throttle(fn, delay = 500) {
     }
   };
 }
-function throttleTime(fn, delay = 500) {
+
+/**
+ * 节流函数（时间戳版本）
+ */
+export function throttleTime(fn, delay = 500) {
   let timer = null,
     startTime = 0;
   return () => {

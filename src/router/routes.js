@@ -3,7 +3,7 @@ import Layout from "@/layout/index.vue";
 export const asyncRoutes = [
   {
     path: "/index",
-    meta: { title: "首页", icon: "icon-shouye-zhihui" },
+    meta: { title: "首页", icon: "icon-shouye-zhihui", affix: true },
     name: "Index",
     component: () => import("@/views/index.vue"),
   },
@@ -18,6 +18,12 @@ export const asyncRoutes = [
         name: "HTML",
         component: () => import("@/views/web/html/index.vue"),
         meta: { title: "HTML", icon: "icon-HTML" },
+      },
+      {
+        path: "css",
+        name: "CSS",
+        component: () => import("@/views/web/css/index.vue"),
+        meta: { title: "CSS", icon: "icon-HTML" },
       },
     ],
   },
