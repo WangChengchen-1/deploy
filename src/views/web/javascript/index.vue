@@ -1,12 +1,12 @@
-<!--
+/*
  * new page
  * @author: wangcc
  * @since: 2023-04-18
- * @name: html
--->
+ * @name: 
+*/
 <template>
-  <div class="html-page">
-
+  <div class="javascript-page">
+    
   </div>
 </template>
 

@@ -6,6 +6,20 @@
   "description": "用于日常自己项目的使用",
   "glyphs": [
     {
+      "icon_id": "8952924",
+      "name": "java-script",
+      "font_class": "java-script",
+      "unicode": "e810",
+      "unicode_decimal": 59408
+    },
+    {
+      "icon_id": "15214514",
+      "name": "css",
+      "font_class": "css",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
       "icon_id": "2205478",
       "name": "取消全屏",
       "font_class": "cancel-full-screen",

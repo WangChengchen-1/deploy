@@ -1,4 +1,5 @@
 // redirect: "noRedirect", //当设置 noRedirect 的时候该路由在面包屑导航中不可被点击
+// affix:true //设置该字段为true的时候，tags 不可以被删除
 import Layout from "@/layout/index.vue";
 export const asyncRoutes = [
   {
@@ -23,7 +24,13 @@ export const asyncRoutes = [
         path: "css",
         name: "CSS",
         component: () => import("@/views/web/css/index.vue"),
-        meta: { title: "CSS", icon: "icon-HTML" },
+        meta: { title: "CSS", icon: "icon-css" },
+      },
+      {
+        path: "javascript",
+        name: "JAVASCRIPT",
+        component: () => import("@/views/web/javascript/index.vue"),
+        meta: { title: "javascript", icon: "icon-java-script" },
       },
     ],
   },
