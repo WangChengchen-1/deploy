@@ -32,6 +32,19 @@ export const asyncRoutes = [
         component: () => import("@/views/web/javascript/index.vue"),
         meta: { title: "javascript", icon: "icon-java-script" },
       },
+      {
+        path: "vue",
+        name: "VUE",
+        meta: { title: "Vue", icon: "icon-vue" },
+        children:[
+          {
+            path:'slot',
+            name:'SLOT',
+            component:()=>import("@/views/web/vue/slot/index.vue"),
+            meta: { title: "slot", icon: "icon-zhishi" },
+          }
+        ]
+      },
     ],
   },
 ];
