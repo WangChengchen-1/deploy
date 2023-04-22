@@ -30,7 +30,7 @@ export const asyncRoutes = [
         path: "javascript",
         name: "JAVASCRIPT",
         component: () => import("@/views/web/javascript/index.vue"),
-        meta: { title: "javascript", icon: "icon-java-script" },
+        meta: { title: "JavaScript", icon: "icon-java-script" },
       },
       {
         path: "vue",
@@ -41,7 +41,20 @@ export const asyncRoutes = [
             path:'slot',
             name:'SLOT',
             component:()=>import("@/views/web/vue/slot/index.vue"),
-            meta: { title: "slot", icon: "icon-zhishi" },
+            meta: { title: "Slots", icon: "icon-zhishi" },
+          }
+        ]
+      },
+      {
+        path: "element-plus",
+        name: "Element-Plus",
+        meta: { title: "Element-Plus", icon: "icon-vue" },
+        children:[
+          {
+            path:'date-picker',
+            name:'Date-Picker',
+            component:()=>import("@/views/web/elementPlus/datePicker/index.vue"),
+            meta: { title: "Date-Picker", icon: "icon-zhishi" },
           }
         ]
       },
