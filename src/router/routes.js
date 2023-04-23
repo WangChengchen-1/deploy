@@ -42,6 +42,12 @@ export const asyncRoutes = [
             name:'SLOT',
             component:()=>import("@/views/web/vue/slot/index.vue"),
             meta: { title: "Slots", icon: "icon-zhishi" },
+          },
+          {
+            path:'composables',
+            name:'Composables',
+            component:()=>import("@/views/web/vue/composables/index.vue"),
+            meta: { title: "Composables", icon: "icon-zhishi" },
           }
         ]
       },
