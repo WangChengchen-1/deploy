@@ -48,7 +48,13 @@ export const asyncRoutes = [
             name:'Composables',
             component:()=>import("@/views/web/vue/composables/index.vue"),
             meta: { title: "Composables", icon: "icon-zhishi" },
-          }
+          },
+          {
+            path:'customDirectives',
+            name:'CustomDirectives',
+            component:()=>import("@/views/web/vue/customDirectives/index.vue"),
+            meta: { title: "CustomDirectives", icon: "icon-zhishi" },
+          },
         ]
       },
       {
