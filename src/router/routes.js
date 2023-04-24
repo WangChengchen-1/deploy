@@ -55,6 +55,18 @@ export const asyncRoutes = [
             component:()=>import("@/views/web/vue/customDirectives/index.vue"),
             meta: { title: "CustomDirectives", icon: "icon-zhishi" },
           },
+          {
+            path:'builtInComponent-transition',
+            name:'Transition',
+            component:()=>import("@/views/web/vue/builtInComponent/transition/index.vue"),
+            meta: { title: "Transition", icon: "icon-zhishi" },
+          },
+          {
+            path:'builtInComponent-transitionGroup',
+            name:'TransitionGroup',
+            component:()=>import("@/views/web/vue/builtInComponent/transitionGroup/index.vue"),
+            meta: { title: "TransitionGroup", icon: "icon-zhishi" },
+          },
         ]
       },
       {
