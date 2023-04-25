@@ -1,0 +1,32 @@
+<!--
+ * new page
+ * @author: wangcc
+ * @since: 2023-04-25
+ * @name: model 模态框
+-->
+<template>
+  <button @click="open = true">Open Modal</button>
+
+  <Teleport to="body">
+    <div v-if="open" class="modal">
+      <p>Hello from the modal!</p>
+      <button @click="open = false">Close</button>
+    </div>
+  </Teleport>
+</template>
+
+<script setup>
+const open = ref(false);
+</script>
+
+<style scoped>
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 20%;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  background: gainsboro;
+}
+</style>

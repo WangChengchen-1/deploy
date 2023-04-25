@@ -69,9 +69,15 @@ export const asyncRoutes = [
           },
           {
             path:'builtInComponent-keepAlive',
-            name:'keepAlive',
+            name:'KeepAlive',
             component:()=>import("@/views/web/vue/builtInComponent/keepAlive/index.vue"),
             meta: { title: "keepAlive", icon: "icon-zhishi" },
+          },
+          {
+            path:'builtInComponent-teleport',
+            name:'Teleport',
+            component:()=>import("@/views/web/vue/builtInComponent/teleport/index.vue"),
+            meta: { title: "teleport", icon: "icon-zhishi" },
           },
         ]
       },
