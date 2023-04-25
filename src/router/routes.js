@@ -67,6 +67,12 @@ export const asyncRoutes = [
             component:()=>import("@/views/web/vue/builtInComponent/transitionGroup/index.vue"),
             meta: { title: "TransitionGroup", icon: "icon-zhishi" },
           },
+          {
+            path:'builtInComponent-keepAlive',
+            name:'keepAlive',
+            component:()=>import("@/views/web/vue/builtInComponent/keepAlive/index.vue"),
+            meta: { title: "keepAlive", icon: "icon-zhishi" },
+          },
         ]
       },
       {
