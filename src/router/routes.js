@@ -79,6 +79,12 @@ export const asyncRoutes = [
             component:()=>import("@/views/web/vue/builtInComponent/teleport/index.vue"),
             meta: { title: "teleport", icon: "icon-zhishi" },
           },
+          {
+            path:'store',
+            name:'Store',
+            component:()=>import("@/views/web/vue/store/index.vue"),
+            meta: { title: "Store", icon: "icon-zhishi" },
+          },
         ]
       },
       {
